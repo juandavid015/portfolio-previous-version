@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -25,10 +25,80 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      * {
+        margin:  0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height:100vh;
+        min-width:100vw;
+        background-color: #16153E;
+
+      }
+      .loader {
+        max-width: 250px;
+        height: auto;
+        /* animation: loader 3s linear infinite alternate-reverse; */
+      }
+      .dot {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 0%;
+        background-color: #ffffff;
+      }
+      .container .dot:nth-last-child(1) {
+        animation: jumpingAnimation 1.2s 0.6s linear infinite;
+      }
+      .container .dot:nth-last-child(2) {
+        animation: jumpingAnimation 1.2s 0.3s linear infinite;
+      }
+      .container .dot:nth-last-child(3) {
+        animation: jumpingAnimation 1.2s 0s linear infinite;
+      }
+      @keyframes loader {
+          0% { transform: translateY(5px);}
+          25% { transform: translateY(-5px);}
+          50%{ transform: translateY(5px);}
+          100% { transform: translateY(-5px);}
+      }
+
+      @keyframes jumpingAnimation {
+        0% {
+          transform: translate(0, 0);
+        }
+        16% {
+          transform: translate(0, -15px);
+        }
+        33% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+    </style>
   </head>
-  <body>
+  <body >
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      
+    </div>
+    <div class="container">
+        <img src='./Play__3_-removebg-preview.png' alt='loader'
+        class='loader'/>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
