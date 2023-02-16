@@ -10,6 +10,7 @@ I really like.
 More projects will be added soon.
 
 ## Deployment
+[Vercel](https://portfolio-juan-dgr.vercel.app/)
 
 ## Techs used
 This project was builded using React and Tailwind.
@@ -31,7 +32,7 @@ because not much logic was needed for this application. In the App.js i will use
 the logic.
 
 ## Acknowledge
-- Illustration header by[pixsellz](https://iconscout.com/contributors/pixsellz)
+- Illustration header by [pixsellz](https://iconscout.com/contributors/pixsellz)
 - Tech icons [iconscout](https://iconscout.com/)
 - Other icons [fontawesome](https://fontawesome.com/)
 
