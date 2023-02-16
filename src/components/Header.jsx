@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { FullStackIcon, GithubIcon, LanguageIcon, LinkedinIcon, MenuIcon, MoonIcon, SunIcon, XIcon } from "./iconComponents/IconComponents";
-import cv from '../assets/pdf/Juan Garzón - Web developer_compressed.pdf'
+import cv from '../assets/pdf/Juan_Garzón_Web_Developer_.pdf'
 export default function Header ({switchTheme, theme, language, switchLanguage}) {
 
     const [expandMenu, setExpandMenue] = useState(false)
