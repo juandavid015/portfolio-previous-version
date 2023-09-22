@@ -1,5 +1,18 @@
 export const mainProjects = [
     {
+        title: 'Soflink - Project management app',
+        // description: 'manage data brought from an external API (Kitsu API); app design; process and functionality for authentication and authorization with third parties (sign in and sign up); design and interactivity of the "animes", "episodes" and "user" sections; filtering, sorting and searching for the Animes list; functionality and interaction of comments in episodes.',
+        description: {
+            en: 'Collaborative application for project management. Organize, add, assign and eliminate project tasks. ',
+            es: 'Aplicación de colaboración para la gestión de proyectos. Organice, agregue, asigne y elimine tareas del proyecto.'
+        },
+        technologies: ['Typescript', 'ReactJS', 'Express JS', 'NodeJS','Mongodb', 'Graphql', 'Prisma', 'Apollo', 'Websocket', 'Auth0', 'HTML', 'TailwindCSS'],
+        mainBackgroundImage: 'https://res.cloudinary.com/dut4cwhtd/image/upload/v1695400314/softlink.vercel.app_projects_Desktop_3_1_lav0s6.png',
+        otherPreviewImages: [],
+        url: 'https://softlink.vercel.app/',
+        repository: 'https://github.com/juandavid015/X-Project-Management'
+    },
+    {
         title: 'Zero Two - Anime page',
         // description: 'manage data brought from an external API (Kitsu API); app design; process and functionality for authentication and authorization with third parties (sign in and sign up); design and interactivity of the "animes", "episodes" and "user" sections; filtering, sorting and searching for the Animes list; functionality and interaction of comments in episodes.',
         description: {
@@ -7,7 +20,7 @@ export const mainProjects = [
             es: 'Administrar los datos traídos desde una API externa (API Kitsu). Algunas características: proceso y funcionalidad para autenticación y autorización con terceros (iniciar sesión y registrarse); agregar a la lista y cambiar la configuración del usuario; filtrado, clasificación y búsqueda de la lista de animes; interacción de comentarios en los episodios de anime.'
         },
         technologies: ['Typescript', 'ReactJS', 'Express JS', 'NodeJS','PostgreSQL', 'Sequelize', 'Redux', 'HTML', 'CSS'],
-        mainBackgroundImage: 'https://res.cloudinary.com/dut4cwhtd/image/upload/v1676048949/zerotwo-deploy.vercel.app_login_Dektop_3_egxkii.png',
+        mainBackgroundImage: 'https://res.cloudinary.com/dut4cwhtd/image/upload/v1695400154/zerotwo-deploy.vercel.app_home_Desktop_3_qdzjjr.png',
         otherPreviewImages: [],
         url: 'https://zerotwo-deploy.vercel.app/',
         repository: 'https://github.com/juandavid015/zerotwo-deploy'
@@ -87,6 +100,6 @@ export const otherProjects = [
 export  const techs = {
     core: ['Javascript', 'ReactJS', 'ExpressJS'],
     other: ['Typescript', 'NodeJS', 'PostgreSQL', 'Sequelize',
-    'Redux', 'CSS', 'HTML'],
+    'Redux', 'CSS', 'HTML', 'Mongodb'],
     future: ['Tailwind', 'Figma']
 }

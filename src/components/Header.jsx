@@ -1,6 +1,7 @@
 import { useState } from "react"
-import { FullStackIcon, GithubIcon, LanguageIcon, LinkedinIcon, MenuIcon, MoonIcon, SunIcon, XIcon } from "./iconComponents/IconComponents";
-import cv from '../assets/pdf/Juan_Garzón_Web_Developer_.pdf'
+import { FullStackIcon, GithubIcon, LanguageIcon, LinkedinIcon, MenuIcon, XIcon } from "./iconComponents/IconComponents";
+import cv_en from '../assets/pdf/JUAN_GARZON_WEB_DEVELOPER_EN.pdf'
+import cv_es from '../assets/pdf/JUAN_GARZON_WEB_DEVELOPER_ES.pdf'
 export default function Header ({switchTheme, theme, language, switchLanguage}) {
 
     const [expandMenu, setExpandMenue] = useState(false)
@@ -54,7 +55,7 @@ export default function Header ({switchTheme, theme, language, switchLanguage}) 
                                 {language === 'es' ? 'Contacto' : 'Contact'}
                             </a>
                         </li>
-                        <li className="transition-all inline-block hover:-translate-y-0.5 sm:hover:text-white sm:text-white/70 
+                        {/* <li className="transition-all inline-block hover:-translate-y-0.5 sm:hover:text-white sm:text-white/70 
                         text-content-dark/70 hover:text-content-dark  fill-white/50 text-font-color-white/50 cursor-pointer
                         dark:text-font-color-white/80 dark:hover:text-font-color-white">
                             <button onClick={switchTheme}>
@@ -64,7 +65,7 @@ export default function Header ({switchTheme, theme, language, switchLanguage}) 
                                     :<MoonIcon className={'sm:fill-light h-[30px] fill-dark'}/>
                                 }
                             </button>
-                        </li>
+                        </li> */}
                         <li className="transition-all inline-block hover:-translate-y-0.5 sm:hover:text-white sm:text-white/70 
                         text-content-dark/70 hover:text-content-dark  fill-white/50 text-font-color-white/50 cursor-pointer
                         dark:text-font-color-white/80 dark:hover:text-font-color-white">
@@ -83,10 +84,10 @@ export default function Header ({switchTheme, theme, language, switchLanguage}) 
                         <span>{language === 'es' ? "Hola! Me llamo Juan" : "Hey! I'm Juan"},</span><br/>
                         <span className="dark:text-light-contrast-color text-secondary-dark-1">Full Stack Web Developer</span>
                     </h1>
-                    <a href={cv} target={'_blank'} rel='noopener noreferrer' 
+                    <a href={language === 'en' ? cv_en: cv_es} target={'_blank'} rel='noopener noreferrer' 
                     className=" p-4 mr-2 mt-16px inline-block 
                     bg-right-bottom hover:bg-left-bottom bg-gradient-to-r from-secondary-dark-1 to-content-light bg-[length:200%_100%] transition-all ease-out duration-1000" >
-                        Download CV
+                        {`${language === 'en' ? 'Download CV': 'Descargar CV'}`}
                     </a>
                     <a className="py-2 transition-all inline-block hover:-translate-y-0.5 hover:fill-white hover:text-white fill-white/50 text-font-color-white/50 cursor-pointer" href="https://github.com/juandavid015" target={"_blank"} rel="noreferrer">
                         <GithubIcon className="inline-block h-5 w-fit px-2" />

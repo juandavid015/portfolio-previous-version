@@ -9,12 +9,12 @@ module.exports = {
       
       colors: {
         'light': "white", 
-        'dark': '#16153E',
+        'dark': '#0a0717',
         'light-2': "#f0f0ff",
-        'dark-2': "#0a0024",
+        'dark-2': "#0c081b",
         'font-color-white': '#bdd7ff',
         'content-light': '#5833ff',
-        'content-dark': '#0a0024',
+        'content-dark': '#0a0717',
         'secondary-dark-1': '#93CBFF',
         'secondary-dark-2': '#7e1386',
         'font-color-dark': '#40316C',

@@ -1,4 +1,4 @@
-import { CssIcon, ExpressIcon, FigmaIcon, GithubIcon, HtmlIcon, JavaScriptIcon, NodeIcon, OpenIcon, PostgreSQLIcon, ReactIcon, ReduxIcon, SequelizeIcon, TailwindIcon, TypescriptIcon } from "./IconComponents";
+import { CssIcon, ExpressIcon, FigmaIcon, GithubIcon, HtmlIcon, JavaScriptIcon, MongodbIcon, NodeIcon, OpenIcon, PostgreSQLIcon, ReactIcon, ReduxIcon, SequelizeIcon, TailwindIcon, TypescriptIcon } from "./IconComponents";
 
 export default function GenerateIcon ({iconName, height, color, className}) {
     let firstWordOfIcon = iconName.split(' ')[0].toLowerCase();
@@ -17,5 +17,6 @@ export default function GenerateIcon ({iconName, height, color, className}) {
     else if (firstWordOfIcon.includes('github')) return (<GithubIcon color={color} height={height} className={className}/>)  
     else if (firstWordOfIcon.includes('open')) return (<OpenIcon color={color} height={height} className={className}/>)  
     else if (firstWordOfIcon.includes('sequelize')) return (<SequelizeIcon color={color} height={height} className={className}/>)  
+    else if (firstWordOfIcon.includes('mongo')) return (<MongodbIcon color={color} height={height} className={className}/>)  
     else return
 }
